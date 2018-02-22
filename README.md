@@ -15,13 +15,11 @@ $ wstool merge https://raw.githubusercontent.com/personalrobotics/pr-rosinstalls
 
 ### Set up the udev rules ###
 
-Create a file called `/etc/udev/rules.d/45-jaco.rules` with the content:
+Create a file called `/etc/udev/rules.d/99-jaco.rules` with the content:
 
 ```
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor} =="22cd", MODE="0666", GROUP="pr", SYMLINK+="mico"
 ```
-
-> A note on USB 3.0: the mico arm does not work with USB 3.0 ports. If your computer has no USB 2.0 ports, you will need to disable xHCI in your BIOS.
 
 ### Running Ada ###
 You use ada in your script by simply calling the ``initialize`` function:
