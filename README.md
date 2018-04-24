@@ -4,14 +4,18 @@ Ada (or Assistive Dextrous Arm) is a package for controlling the Mico robot arm 
 ## Installation ##
 The following rosinstall can be used to get the minimum dependencies required
 to use AdaPy in simulation:
+
+First, be sure to clone https://github.com/HARPLab/harplab-rosinstalls.git into somewhere like ~/harplab-rosinstalls. If it's already there, make sure it's up to date. Then, run
 ```shell
-$ wstool merge https://raw.githubusercontent.com/personalrobotics/pr-rosinstalls/master/ada-sim.rosinstall
+$ wstool merge ~/harplab-rosinstalls/ada-sim.rosinstall 
 ```
 If you plan to connect to the real robot, then you will need a larger set of
 dependencies:
 ```shell
-$ wstool merge https://raw.githubusercontent.com/personalrobotics/pr-rosinstalls/master/ada.rosinstall
+$ wstool merge ~/harplab-rosinstalls/ada.rosinstall
 ```
+## Compilation ##
+Be sure you've run all the steps at https://github.com/HARPLab/harpdocs/blob/master/software\_machine\_setup.md in order to set up your machine with the required packages to compile this.
 
 ### Set up the udev rules ###
 
