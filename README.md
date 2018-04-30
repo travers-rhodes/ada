@@ -15,7 +15,7 @@ dependencies:
 $ wstool merge ~/harplab-rosinstalls/ada.rosinstall
 ```
 ## Compilation ##
-Be sure you've run all the steps at https://github.com/HARPLab/harpdocs/blob/master/software\_machine\_setup.md in order to set up your machine with the required packages to compile this.
+Be sure you've run all the steps at https://github.com/HARPLab/harpdocs/blob/master/software_machine_setup.md in order to set up your machine with the required packages to compile this.
 
 ### Set up the udev rules ###
 
