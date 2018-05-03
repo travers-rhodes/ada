@@ -37,7 +37,7 @@ def initialize(env_path=None, attach_viewer=False, **kw_args):
 
         # Fall back on qtcoin if loading or_rviz failed
         if env.GetViewer() is None:
-           logger.warning('Loading rviz failed. Falling back on qt_coin.')
+           prpy.logger.warning('Loading rviz failed. Falling back on qt_coin.')
            attach_viewer = 'qtcoin'
 
     if attach_viewer and env.GetViewer() is None:
